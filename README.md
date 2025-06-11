@@ -113,7 +113,7 @@ Result:
 
 ![Q8](https://github.com/gnanavikas0112/PIZZA_SALES/blob/00670bb576aabac3d16258d90ef44136e6e7d44f/Screenshot%202025-06-11%20112340.png)
 
-## 10. What are the top 5 pizzas by total revenue ?
+## 10. What are the top 6 pizzas by total revenue ?
 --> Top 5 pizzas by revenue
 ```mysql
 select pizza_name, sum(total_price) as total_revenue
@@ -125,8 +125,21 @@ limit 6;
 
 Result:
 
-![Q10]
+![Q10](https://github.com/gnanavikas0112/PIZZA_SALES/blob/011bacf30ca2b15ae46e682034e34bcb82b2793f/Screenshot%202025-06-11%20113105.png)
 
+## 11. What are the bottom 6 pizzas by total revenue ?
+--> Bottom 6 pizzas by revenue
+```mysql
+select pizza_name, sum(total_price) as total_revenue
+from pizza.sales
+group by pizza_name
+order by total_revenue
+limit 6;
+```
+
+Result:
+
+![Q11]()
 
 
 
