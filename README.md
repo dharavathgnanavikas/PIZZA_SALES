@@ -101,7 +101,18 @@ Result:
 
 ![Q8](https://github.com/gnanavikas0112/PIZZA_SALES/blob/b5d65a8cc4dcbdd9f3e913daa6c9dc1d74644123/Screenshot%202025-06-10%20212008.png)
 
-## 9. 
+## 9. What is the total pizzas sold by pizza category ?
+--> Total pizzas sold by pizza category
+```mysql
+SELECT pizza_category, SUM(quantity) as Total_Quantity_Sold
+FROM pizza.sales
+GROUP BY pizza_category
+```
+
+Result:
+
+![Q8]
+
 
 
 
