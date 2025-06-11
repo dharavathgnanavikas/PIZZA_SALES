@@ -16,4 +16,14 @@
 ```mysql
 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 ```
+Result:
 ![Q1](https://github.com/gnanavikas0112/PIZZA_SALES/blob/00a1d8e72a2ff6bba9607157e1a4ea2bbff74710/Screenshot%202025-06-10%20194806.png)
+
+## 2. what is the average order value from pizza sales?
+-AVERAGE ORDER VALUE
+```mysql
+SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
+```
+Result:
+![Q2]()
+
