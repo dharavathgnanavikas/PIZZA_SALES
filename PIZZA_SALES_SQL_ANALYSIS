@@ -1,5 +1,5 @@
 -- Calculate the Total Revenue from pizza sales:
-```
+``` mysql
 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 ```
 
