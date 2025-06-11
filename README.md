@@ -5,3 +5,15 @@
 **Tools Used:** EXCEL, MySQL, POWER-BI
 
 [Datasets Used](https://drive.google.com/file/d/145icXZlekozs9xTZoOZFvqL9wREm1xOj/view?usp=sharing)
+
+
+
+## Questions I Wanted To Answer From the Dataset:
+
+## 1. what is the total revenue from pizza sales?
+
+-TOTAL REVENUE
+```mysql
+SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
+```
+
