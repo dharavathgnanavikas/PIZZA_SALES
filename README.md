@@ -86,7 +86,20 @@ GROUP BY PIZZA_CATEGORY;
 
 Result:
 
-![Q7]()
+![Q7](https://github.com/gnanavikas0112/PIZZA_SALES/blob/9809d004ab78b332d81e1b7941dda37cbffc7276/Screenshot%202025-06-10%20204432.png)
+
+## 8. What is the percentage of sales by pizza size from pizza sales ?
+--> % of sales by pizza size
+```mysql
+SELECT PIZZA_SIZE, SUM(TOTAL_PRICE) AS PRICE,
+(SUM(TOTAL_PRICE)*100)/(select SUM(TOTAL_PRICE) from pizza.sales) AS PCT
+FROM PIZZA.SALES
+GROUP BY PIZZA_SIZE;
+```
+
+Result:
+
+![Q8]
 
 
 
