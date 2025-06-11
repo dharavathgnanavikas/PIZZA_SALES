@@ -46,7 +46,20 @@ SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales
 
 Result:
 
-![Q4]()
+![Q4](https://github.com/gnanavikas0112/PIZZA_SALES/blob/afa7fe28ac8e9873bebe2dd8ae41472abf17bfce/Screenshot%202025-06-10%20195636.png)
+
+## 5. What is the average pizzas per order from pizza sales?
+--> AVERAGE PIZZAS PER ORDER
+```mysql
+SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
+CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2))
+AS Avg_Pizzas_per_order
+FROM pizza.sales;
+```
+
+Result:
+
+![Q5]()
 
 
 
