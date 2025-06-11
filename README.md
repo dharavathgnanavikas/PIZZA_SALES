@@ -59,7 +59,19 @@ FROM pizza.sales;
 
 Result:
 
-![Q5]()
+![Q5](https://github.com/gnanavikas0112/PIZZA_SALES/blob/619ce0573eeeafdb295e790caec852fcf3bc843b/Screenshot%202025-06-10%20200612.png)
+
+## 6. What is the daily trend for total orders from pizza sales?
+--> Daily trend for total orders
+```mysql
+SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
+FROM pizza_sales
+GROUP BY DATENAME(DW, order_date)
+```
+
+Result:
+
+![Q6]()
 
 
 
