@@ -195,7 +195,7 @@ limit 6;
 
 Result:
 
-![Q15](
+![Q15](https://github.com/gnanavikas0112/PIZZA_SALES/blob/8e1afa029e4f72868720655cff2e807a1ed3e343/Screenshot%202025-06-11%20113657.png)
 
 
 
