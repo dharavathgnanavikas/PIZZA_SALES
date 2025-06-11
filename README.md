@@ -10,7 +10,7 @@
 
 ## Questions I Wanted To Answer From the Dataset:
 
-## 1. What is the total revenue from pizza sales?
+## 1. What is the total revenue from pizza sales ?
 
 --> TOTAL REVENUE
 ```mysql
@@ -20,7 +20,7 @@ Result:
 
 ![Q1](https://github.com/gnanavikas0112/PIZZA_SALES/blob/00a1d8e72a2ff6bba9607157e1a4ea2bbff74710/Screenshot%202025-06-10%20194806.png)
 
-## 2. What is the average order value from pizza sales?
+## 2. What is the average order value from pizza sales ?
 --> AVERAGE ORDER VALUE
 ```mysql
 SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
@@ -29,7 +29,7 @@ Result:
 
 ![Q2](https://github.com/gnanavikas0112/PIZZA_SALES/blob/aee4cc6fdf0d13789286d59e75bc78c066cce878/Screenshot%202025-06-10%20195219.png)
 
-## 3. What is the total pizzas sold from pizza sales?
+## 3. What is the total pizzas sold from pizza sales ?
 --> TOTAL PIZZAS SOLD
 ```mysql
 SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales
@@ -38,7 +38,7 @@ Result:
 
 ![Q3](https://github.com/gnanavikas0112/PIZZA_SALES/blob/49dbe1ccf056ddfcaae39c205497666b7b9ae750/Screenshot%202025-06-10%20195434.png)
 
-## 4. What is the total orders from pizza sales?
+## 4. What is the total orders from pizza sales ?
 --> TOTAL ORDERS
 ```mysql
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales
@@ -48,7 +48,7 @@ Result:
 
 ![Q4](https://github.com/gnanavikas0112/PIZZA_SALES/blob/afa7fe28ac8e9873bebe2dd8ae41472abf17bfce/Screenshot%202025-06-10%20195636.png)
 
-## 5. What is the average pizzas per order from pizza sales?
+## 5. What is the average pizzas per order from pizza sales ?
 --> AVERAGE PIZZAS PER ORDER
 ```mysql
 SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
@@ -61,7 +61,7 @@ Result:
 
 ![Q5](https://github.com/gnanavikas0112/PIZZA_SALES/blob/619ce0573eeeafdb295e790caec852fcf3bc843b/Screenshot%202025-06-10%20200612.png)
 
-## 6. What is the daily trend for total orders from pizza sales?
+## 6. What is the daily trend for total orders from pizza sales ?
 --> Daily trend for total orders
 ```mysql
 SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
@@ -71,7 +71,23 @@ GROUP BY DATENAME(DW, order_date)
 
 Result:
 
-![Q6]()
+![Q6](https://github.com/gnanavikas0112/PIZZA_SALES/blob/6fe610f5c13fe1f4659959625b88e5ef76a8153d/Screenshot%202025-06-11%20104838.png)
+
+## 7. What is percentage of sales by pizza category from pizza sales ?
+--> % of sales by pizza category
+```mysql
+SELECT 
+    PIZZA_CATEGORY AS CATEGORY, 
+    CAST(SUM(TOTAL_PRICE) AS DECIMAL(10,2)) AS REVENUE,
+    (SUM(TOTAL_PRICE) * 100.0) / SUM(SUM(TOTAL_PRICE)) OVER () AS PCT
+FROM PIZZA.SALES
+GROUP BY PIZZA_CATEGORY;
+```
+
+Result:
+
+![Q7]()
+
 
 
 
