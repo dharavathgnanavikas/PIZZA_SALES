@@ -12,18 +12,32 @@
 
 ## 1. what is the total revenue from pizza sales?
 
--TOTAL REVENUE
+--> TOTAL REVENUE
 ```mysql
 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 ```
 Result:
+
 ![Q1](https://github.com/gnanavikas0112/PIZZA_SALES/blob/00a1d8e72a2ff6bba9607157e1a4ea2bbff74710/Screenshot%202025-06-10%20194806.png)
 
 ## 2. what is the average order value from pizza sales?
--AVERAGE ORDER VALUE
+--> AVERAGE ORDER VALUE
 ```mysql
 SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
 ```
 Result:
-![Q2]()
+
+![Q2](https://github.com/gnanavikas0112/PIZZA_SALES/blob/aee4cc6fdf0d13789286d59e75bc78c066cce878/Screenshot%202025-06-10%20195219.png)
+
+## 3. what is the total pizzas sold from pizza sales?
+--> TOTAL PIZZAS SOLD
+```mysql
+SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales
+```
+Result: 
+
+![Q3]()
+
+
+
 
