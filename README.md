@@ -5,7 +5,7 @@
 
 [Datasets Used](https://drive.google.com/file/d/145icXZlekozs9xTZoOZFvqL9wREm1xOj/view?usp=sharing)
 
-[SQL Analysis (Code)](https://github.com/SharifAthar/Netflix-Shows-and-Movies-SQL/blob/main/Netflix_SQL_Analysis.sql)
+[SQL Analysis (Code)](https://github.com/gnanavikas0112/PIZZA_SALES/blob/main/PIZZA_SALES_SQL_ANALYSIS)
 
 
 
