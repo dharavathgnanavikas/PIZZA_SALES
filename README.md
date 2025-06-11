@@ -115,13 +115,17 @@ Result:
 
 ## 10. What are the top 5 pizzas by total revenue ?
 --> Top 5 pizzas by revenue
-``mysql
+```mysql
 select pizza_name, sum(total_price) as total_revenue
 from pizza.sales
 group by pizza_name
 order by total_revenue desc
 limit 6;
 ```
+
+Result:
+
+![Q10]
 
 
 
