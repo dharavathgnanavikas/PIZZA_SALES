@@ -167,7 +167,22 @@ limit 6;
 
 Result:
 
-![Q13]()
+![Q13](https://github.com/gnanavikas0112/PIZZA_SALES/blob/d1689a7b69d46419443ae130ef15063aff881bfd/Screenshot%202025-06-11%20113359.png)
+
+## 14. What are the top 6 pizzas by total orders ?
+--> Top 6 pizzas by total orders
+```mysql
+select pizza_name, count(distinct order_id) as total_orders
+from pizza.sales
+group by pizza_name
+order by total_orders desc
+limit 6;
+```
+
+Result:
+
+![Q14]()
+
 
 
 
