@@ -153,8 +153,21 @@ limit 6;
 
 Result:
 
-![Q12]
+![Q12](https://github.com/gnanavikas0112/PIZZA_SALES/blob/6babdb271f6f514bf57325d40922fb092aef0a53/Screenshot%202025-06-11%20113312.png)
 
+## 13. What are the bottom 6 pizzas by total quantity ?
+--> bottom 6 pizzas by quantity
+```mysql
+select pizza_name, sum(quantity) as total_quantity
+from pizza.sales
+group by pizza_name
+order by total_quantity
+limit 6;
+```
+
+Result:
+
+![Q13]()
 
 
 
