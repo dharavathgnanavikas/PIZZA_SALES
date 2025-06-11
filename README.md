@@ -5,6 +5,9 @@
 
 [Datasets Used](https://drive.google.com/file/d/145icXZlekozs9xTZoOZFvqL9wREm1xOj/view?usp=sharing)
 
+[SQL Analysis (Code)](https://github.com/SharifAthar/Netflix-Shows-and-Movies-SQL/blob/main/Netflix_SQL_Analysis.sql)
+
+
 
 
 ## Questions I Wanted To Answer From the Dataset:
