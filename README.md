@@ -99,7 +99,9 @@ GROUP BY PIZZA_SIZE;
 
 Result:
 
-![Q8]
+![Q8](https://github.com/gnanavikas0112/PIZZA_SALES/blob/b5d65a8cc4dcbdd9f3e913daa6c9dc1d74644123/Screenshot%202025-06-10%20212008.png)
+
+## 9. 
 
 
 
