@@ -7,6 +7,8 @@
 
 [SQL Analysis (Code)](https://github.com/gnanavikas0112/PIZZA_SALES/blob/main/PIZZA_SALES_SQL_ANALYSIS)
 
+[Netflix Dashboard - Tableau](https://drive.google.com/file/d/17t6Ev6uhLfJL07Erbl72UvFzeVVto-Qn/view?usp=sharing)
+
 
 
 
