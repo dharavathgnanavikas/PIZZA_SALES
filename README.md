@@ -105,6 +105,8 @@ Result:
 
 ![Q8](https://github.com/gnanavikas0112/PIZZA_SALES/blob/b5d65a8cc4dcbdd9f3e913daa6c9dc1d74644123/Screenshot%202025-06-10%20212008.png)
 
+"Analyzing the daily order trends helps us understand peak sales periods. Additionally, reviewing sales percentages by category and size provides insights into customer preferences, enabling better inventory management and promotional strategies."
+
 ## 9. What is the total pizzas sold by pizza category ?
 - Total pizzas sold by pizza category
 ```mysql
@@ -201,6 +203,13 @@ Result:
 
 ![Q15](https://github.com/gnanavikas0112/PIZZA_SALES/blob/8e1afa029e4f72868720655cff2e807a1ed3e343/Screenshot%202025-06-11%20113657.png)
 
+** Conclusion : **
+
+- The top-selling pizzas indicate customer preferences, helping businesses prioritize stock and promotions.
+  
+- The least popular pizzas provide insight into potential menu modifications or targeted marketing efforts.
+
+- The ability to distinguish between quantity sold and total orders can reveal whether a pizza is frequently ordered in bulk or simply enjoys wide customer appeal.
 
 
 
